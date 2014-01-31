@@ -1,6 +1,8 @@
 # LogmanRails
 
-TODO: Write a gem description
+This is Rails client library for [Logman](https://github.com/saicoder/logman). 
+Library tracks exceptions in Rails and sends them 
+to [Logman](https://github.com/saicoder/logman) endpoint.
 
 ## Installation
 
@@ -18,7 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Place following code in your environment config with your endpoint and token:
+```ruby
+config.middleware.use Logman::Rails,
+      :endpoint=> 'http://endpoint.location.com/',
+      :token=> 'your bucket token'
+```
+
+You can also send custom logs with methods below:
+```ruby
+Logman.info 'Some message'
+Logman.success 'File uploaded', {optional: 'data'}
+```
+Available methods are: `error`, `warn`, `success`, `info`
 
 ## Contributing
 

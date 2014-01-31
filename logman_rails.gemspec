@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = LogmanRails::VERSION
   spec.authors       = ["Branko Krstic"]
   spec.email         = ["saicoder.net@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{This is a logman client for rails for sending errors to logman endpoint}
+  spec.summary       = %q{This is a logman client for rails for sending errors to logman endpoint}
   spec.homepage      = ""
   spec.license       = "MIT"
 
